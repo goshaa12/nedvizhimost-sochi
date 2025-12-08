@@ -37,6 +37,9 @@ export function Hero({
   imageAlt,
   onCtaClick,
 }: HeroProps) {
+  const featuresGridCols =
+    features.length <= 3 ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2';
+
   return (
     <section className="relative bg-gradient-to-br from-emerald-50 via-white to-emerald-50 py-12 md:py-20 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -51,7 +54,7 @@ export function Hero({
               </p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+            <div className={`grid ${featuresGridCols} gap-3 md:gap-4`}>
               {features.map((feature, index) => {
                 const Icon = iconMap[feature.icon] || Shield;
                 return (

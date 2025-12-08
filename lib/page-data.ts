@@ -253,15 +253,15 @@ export const investmentStatsData = [
 export const galleryData = [
   {
     type: 'image' as const,
-    url: '/images/kvartiry/elitnye/elitnye-1.webp',
+    url: '/images/kvartiry/ekonom/ekonom-1.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/kvartiry/elitnye/elitnye-2.webp',
+    url: '/images/kvartiry/ekonom/ekonom-2.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/kvartiry/elitnye/elitnye-3.webp',
+    url: '/images/kvartiry/ekonom/ekonom-3.webp',
   },
 ];
 

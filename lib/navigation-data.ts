@@ -18,7 +18,7 @@ export const navigationData: NavItem[] = [
         href: '#',
         children: [
           { label: 'Элитные квартиры', href: '/kvartiry/elitnye' },
-          { label: 'Квартиры бизнес-класса', href: '/kvartiry/biznes-klass' },
+          { label: 'Квартиры бизнес-класса', href: '/kvartiry/biznes' },
           { label: 'Квартиры эконом-класса', href: '/kvartiry/ekonom-klass' },
           { label: 'Квартиры среднего класса', href: '/kvartiry/sredniy-klass' },
         ],
