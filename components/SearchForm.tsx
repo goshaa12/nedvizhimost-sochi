@@ -73,7 +73,7 @@ export function SearchForm({
             {description && (
               <p className="text-sm md:text-base text-gray-600">
                 {description}
-              </p>
+            </p>
             )}
           </div>
           
@@ -94,59 +94,59 @@ export function SearchForm({
               }}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                <div>
+              <div>
                   <label className="block mb-2 text-xs md:text-sm text-gray-600">{objectTypeLabel}</label>
                   <select name="objectType" className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20">
                     {objectTypes.map((type, index) => (
                       <option key={index} value={type.value}>{type.label}</option>
                     ))}
-                  </select>
-                </div>
-                
-                <div>
+                </select>
+              </div>
+              
+              <div>
                   <label className="block mb-2 text-xs md:text-sm text-gray-600">{areaLabel}</label>
-                  <input
+                <input
                     name="area"
-                    type="text"
+                  type="text"
                     placeholder={areaPlaceholder}
                     className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20"
-                  />
-                </div>
-                
-                <div>
+                />
+              </div>
+              
+              <div>
                   <label className="block mb-2 text-xs md:text-sm text-gray-600">{districtLabel}</label>
                   <select name="district" className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20">
                     {districts.map((district, index) => (
                       <option key={index} value={district.value}>{district.label}</option>
                     ))}
-                  </select>
-                </div>
-                
-                <div>
-                  <label className="block mb-2 text-xs md:text-sm text-gray-600">{priceLabel}</label>
-                  <input
-                    name="price"
-                    type="text"
-                    placeholder={pricePlaceholder}
-                    className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20"
-                  />
-                </div>
-                
-                <div className="md:col-span-2">
-                  <label className="block mb-2 text-xs md:text-sm text-gray-600">{additionalLabel}</label>
-                  <textarea
-                    name="additional"
-                    rows={3}
-                    placeholder={additionalPlaceholder}
-                    className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20 resize-none"
-                  />
-                </div>
+                </select>
               </div>
               
+              <div>
+                  <label className="block mb-2 text-xs md:text-sm text-gray-600">{priceLabel}</label>
+                <input
+                    name="price"
+                  type="text"
+                    placeholder={pricePlaceholder}
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20"
+                />
+              </div>
+              
+              <div className="md:col-span-2">
+                  <label className="block mb-2 text-xs md:text-sm text-gray-600">{additionalLabel}</label>
+                <textarea
+                    name="additional"
+                  rows={3}
+                    placeholder={additionalPlaceholder}
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3 text-sm md:text-base rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-900/20 resize-none"
+                />
+              </div>
+            </div>
+            
               <button type="submit" className="w-full mt-4 md:mt-6 bg-emerald-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl hover:bg-emerald-800 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20 text-sm md:text-base">
                 <Search className="w-4 h-4 md:w-5 md:h-5" />
                 {buttonText}
-              </button>
+            </button>
             </form>
           </div>
         </div>

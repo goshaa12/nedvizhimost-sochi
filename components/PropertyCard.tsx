@@ -92,8 +92,8 @@ export function PropertyCard({
               onClick={onButtonClick}
               className="w-full sm:w-auto bg-emerald-900 text-white px-5 md:px-6 py-2 md:py-2.5 rounded-lg hover:bg-emerald-800 transition-colors text-sm md:text-base"
             >
-              Подробнее
-            </button>
+            Подробнее
+          </button>
           ) : (
             <Link 
               href={href}

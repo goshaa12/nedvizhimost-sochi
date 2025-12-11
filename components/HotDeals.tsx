@@ -85,7 +85,7 @@ export function HotDeals({
           {description && (
             <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
               {description}
-            </p>
+          </p>
           )}
         </div>
         

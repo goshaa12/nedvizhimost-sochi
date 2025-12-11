@@ -16,7 +16,7 @@ export function About({
   const showPartnersSection =
     (Array.isArray(partners) && partners.length > 0) ||
     !!partnersFooterText;
-
+  
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -29,7 +29,7 @@ export function About({
               ))}
             </div>
           </div>
-
+          
           {showPartnersSection && (
             <div className="bg-emerald-50 p-6 md:p-8 rounded-2xl border border-emerald-100">
               {!!partnersTitle && (
@@ -37,11 +37,11 @@ export function About({
               )}
               {Array.isArray(partners) && partners.length > 0 && (
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-                  {partners.map((partner, index) => (
-                    <div
-                      key={index}
+              {partners.map((partner, index) => (
+                <div
+                  key={index}
                       className="bg-white h-16 md:h-20 rounded-xl border border-gray-200 flex items-center justify-center hover:border-emerald-900/30 transition-colors"
-                    >
+                >
                       <span className="text-gray-400 text-xs md:text-sm px-2 text-center">{partner}</span>
                     </div>
                   ))}

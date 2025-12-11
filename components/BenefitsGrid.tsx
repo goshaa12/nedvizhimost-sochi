@@ -75,7 +75,7 @@ export function BenefitsGrid({
                 Связаться с нами
               </button>
             )}
-          </div>
+        </div>
         )}
       </div>
     </section>

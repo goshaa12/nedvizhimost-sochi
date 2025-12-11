@@ -29,7 +29,7 @@ export function InfoSection({
             
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {cards.map((card, index) => (
-              <div key={index} className="bg-emerald-50 p-6 md:p-8 rounded-2xl border border-emerald-100">
+              <div key={index} className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-emerald-100">
                 <h3 className="mb-3 md:mb-4 text-base md:text-lg font-semibold text-gray-900">{card.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   {card.description}

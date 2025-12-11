@@ -41,11 +41,11 @@ export function Gallery({
               className="relative rounded-lg md:rounded-xl overflow-hidden group cursor-pointer aspect-[4/3]"
             >
               <div className="absolute inset-0">
-                <ImageWithFallback
-                  src={item.url}
+              <ImageWithFallback
+                src={item.url}
                   alt={item.alt || `Gallery ${index + 1}`}
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+              />
               </div>
               {item.type === 'video' && (
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-10">

@@ -61,12 +61,12 @@ export function Hero({
                   <div key={index} className="flex items-start gap-3 bg-white p-3 md:p-4 rounded-xl shadow-sm">
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Icon className="w-4 h-4 md:w-5 md:h-5 text-emerald-900" />
-                    </div>
-                    <div>
+                </div>
+                <div>
                       <div className="mb-1 text-sm md:text-base font-medium text-gray-900">{feature.title}</div>
                       <p className="text-xs md:text-sm text-gray-500">{feature.description}</p>
-                    </div>
-                  </div>
+                </div>
+              </div>
                 );
               })}
             </div>
