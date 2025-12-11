@@ -91,7 +91,6 @@ export function Hero({
                 alt={imageAlt}
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent"></div>
             </div>
           </div>
         </div>

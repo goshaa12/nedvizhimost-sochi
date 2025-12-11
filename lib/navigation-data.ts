@@ -28,17 +28,17 @@ export const navigationData: NavItem[] = [
         href: '#',
         children: [
           { label: 'Студии', href: '/kvartiry/studii' },
-          { label: '1-комнатные квартиры', href: '/kvartiry/1-komnatnye' },
-          { label: '2-комнатные квартиры', href: '/kvartiry/2-komnatnye' },
-          { label: '3-комнатные квартиры', href: '/kvartiry/3-komnatnye' },
+          { label: '1-комнатные квартиры', href: '/kvartiry/1kom' },
+          { label: '2-комнатные квартиры', href: '/kvartiry/2kom' },
+          { label: '3-комнатные квартиры', href: '/kvartiry/3kom' },
         ],
       },
       {
         label: 'По району',
         href: '#',
         children: [
-          { label: 'Квартиры в Центральном районе', href: '/kvartiry/tsentralnyy-rayon' },
-          { label: 'Квартиры в Хостинском районе', href: '/kvartiry/khostinskiy-rayon' },
+          { label: 'Квартиры в Центральном районе', href: '/kvartiry/central' },
+          { label: 'Квартиры в Хостинском районе', href: '/kvartiry/hostinsky' },
           { label: 'Квартиры в Мамайке', href: '/kvartiry/mamayka' },
           { label: 'Квартиры в Адлере', href: '/kvartiry/adler' },
           { label: 'Квартиры в Красной Поляне', href: '/kvartiry/krasnaya-polyana' },

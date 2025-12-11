@@ -36,6 +36,11 @@ export function BenefitsGrid({
   ctaDescription,
   onCtaClick,
 }: BenefitsGridProps) {
+  const isEvenCount = benefits.length % 2 === 0;
+  const gridColsClass = isEvenCount 
+    ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2' 
+    : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
+
   return (
     <section className="py-12 md:py-20 bg-gradient-to-b from-white to-emerald-50">
       <div className="container mx-auto px-4">
@@ -43,7 +48,7 @@ export function BenefitsGrid({
           <h2 className="mb-4 text-2xl sm:text-3xl font-bold text-gray-900">{title}</h2>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className={`${gridColsClass} gap-4 md:gap-6`}>
           {benefits.map((benefit, index) => {
             const Icon = iconMap[benefit.icon] || Database;
             return (
