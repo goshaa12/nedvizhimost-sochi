@@ -128,16 +128,16 @@ function DropdownMenu({ item, level = 0, onClose }: DropdownMenuProps) {
       ref={menuRef}
       className="relative"
     >
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-0.5 sm:gap-1">
         <Link
           href={item.href}
-          className="text-gray-600 hover:text-emerald-900 transition-colors whitespace-nowrap"
+          className="text-gray-600 hover:text-emerald-900 transition-colors whitespace-nowrap text-sm lg:text-base"
           onClick={onClose}
         >
           {item.label}
         </Link>
         <button
-          className="p-1 text-gray-600 hover:text-emerald-900 transition-colors"
+          className="p-0.5 sm:p-1 text-gray-600 hover:text-emerald-900 transition-colors flex-shrink-0"
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
@@ -146,12 +146,12 @@ function DropdownMenu({ item, level = 0, onClose }: DropdownMenuProps) {
           aria-label="Открыть меню"
         >
           <ChevronDown
-            className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           />
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-200 py-2 min-w-[220px] z-50">
+        <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-200 py-2 min-w-[200px] sm:min-w-[220px] z-50">
           {item.children.map((child, index) => (
             <DropdownMenuItem
               key={index}
@@ -261,46 +261,46 @@ export function Header({
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-emerald-900 rounded-lg flex items-center justify-center">
-                <span className="text-white">{logo.icon || 'S'}</span>
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 [@media(orientation:landscape)_and_(max-height:500px)]:py-1">
+      <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-3 md:py-4 [@media(orientation:landscape)_and_(max-height:500px)]:py-1.5">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1.5">
+            <Link href="/" className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-900 rounded-lg flex items-center justify-center [@media(orientation:landscape)_and_(max-height:500px)]:w-7 [@media(orientation:landscape)_and_(max-height:500px)]:h-7">
+                <span className="text-white text-sm sm:text-base [@media(orientation:landscape)_and_(max-height:500px)]:text-xs">{logo.icon || 'S'}</span>
             </div>
-              <span className="text-emerald-900 font-semibold">{logo.text}</span>
+              <span className="text-emerald-900 font-semibold text-sm sm:text-base md:text-lg whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-none [@media(orientation:landscape)_and_(max-height:500px)]:text-xs [@media(orientation:landscape)_and_(max-height:500px)]:max-w-[100px]">{logo.text}</span>
             </Link>
           
-            <nav className="hidden lg:flex items-center gap-6">
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-wrap [@media(orientation:landscape)_and_(max-height:500px)]:gap-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-sm">
               {navigationData.map((item, index) => (
                 <DropdownMenu key={index} item={item} />
               ))}
           </nav>
           
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
               {phone && (
                 <a
                   href={phone.href}
-                  className="hidden sm:flex items-center gap-2 text-gray-900 hover:text-emerald-900 transition-colors"
+                  className="hidden sm:flex items-center gap-1.5 sm:gap-2 text-gray-900 hover:text-emerald-900 transition-colors [@media(orientation:landscape)_and_(max-height:500px)]:hidden"
                 >
-              <Phone className="w-5 h-5" />
-                  <span className="hidden md:inline">{phone.number}</span>
+              <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <span className="hidden md:inline text-sm lg:text-base">{phone.number}</span>
             </a>
               )}
               <button
                 onClick={ctaButton.onClick}
-                className="bg-emerald-900 text-white px-4 md:px-6 py-2.5 rounded-lg hover:bg-emerald-800 transition-colors text-sm md:text-base"
+                className="bg-emerald-900 text-white px-2.5 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg hover:bg-emerald-800 transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap [@media(orientation:landscape)_and_(max-height:500px)]:px-2 [@media(orientation:landscape)_and_(max-height:500px)]:py-1 [@media(orientation:landscape)_and_(max-height:500px)]:text-xs"
               >
                 {ctaButton.text}
               </button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 text-gray-600 hover:text-gray-900"
+                className="lg:hidden p-1.5 sm:p-2 text-gray-600 hover:text-gray-900 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:p-1"
               >
                 {mobileMenuOpen ? (
-                  <X className="w-6 h-6" />
+                  <X className="w-5 h-5 sm:w-6 sm:h-6 [@media(orientation:landscape)_and_(max-height:500px)]:w-4 [@media(orientation:landscape)_and_(max-height:500px)]:h-4" />
                 ) : (
-                  <Menu className="w-6 h-6" />
+                  <Menu className="w-5 h-5 sm:w-6 sm:h-6 [@media(orientation:landscape)_and_(max-height:500px)]:w-4 [@media(orientation:landscape)_and_(max-height:500px)]:h-4" />
                 )}
             </button>
           </div>

@@ -51,8 +51,8 @@ export const navigationData: NavItem[] = [
         label: 'По типу',
         href: '#',
         children: [
-          { label: 'Апартаменты', href: '/kvartiry/apartamenty' },
-          { label: 'Пентхаусы', href: '/kvartiry/penthausy' },
+          { label: 'Апартаменты', href: '/kvartiry/apartments' },
+          { label: 'Пентхаусы', href: '/kvartiry/penthouse' },
         ],
       },
       {

@@ -25,7 +25,7 @@ export const heroData = {
   ],
   ctaText: 'Откройте доступ к объектам недвижимости, которых нет в открытых базах — получите персональный подбор за минуту.',
   ctaButtonText: 'Подобрать недвижимость сейчас',
-  imageUrl: 'https://images.unsplash.com/photo-1721058647318-59ab69ae7a9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBzb2NoaXxlbnwxfHx8fDE3NjQ3NjY2MTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  imageUrl: '/images/kvartiry/mamayka/mamayka-1.webp',
   imageAlt: 'Недвижимость в Сочи',
 };
 

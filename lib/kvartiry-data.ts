@@ -27,7 +27,7 @@ export const kvartiryHeroData = {
   ],
   ctaText: 'Откройте доступ к лучшим квартирам Сочи. Экономия до 15% и реальные под ваш бюджет уже сегодня.',
   ctaButtonText: 'Приобрести недвижимость — купить квартиру',
-  imageUrl: '/images/kvartiry/kvartiry-hero.webp',
+  imageUrl: '/images/sredniy-klass/sredniy-klass-1.webp',
   imageAlt: 'Квартиры в Сочи',
 };
 
