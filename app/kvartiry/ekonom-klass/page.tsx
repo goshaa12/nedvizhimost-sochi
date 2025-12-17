@@ -34,7 +34,8 @@ import {
   ekonomTestimonialsData,
   ekonomFaqData,
 } from '@/lib/kvartiry-ekonom-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { ekonomGalleryData } from '@/lib/kvartiry-ekonom-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryEkonomPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -97,7 +98,7 @@ export default function KvartiryEkonomPage() {
         <Gallery
           title={ekonomGallery.title}
           description={ekonomGallery.description}
-          items={galleryData}
+          items={ekonomGalleryData}
         />
 
         <About

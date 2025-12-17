@@ -292,3 +292,18 @@ export const apartmentsFaqData = [
   },
 ];
 
+export const apartmentsGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/apartments/apartments-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/apartments/apartments-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/apartments/apartments-3.webp',
+  },
+];
+

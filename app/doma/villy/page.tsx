@@ -33,8 +33,9 @@ import {
   villyBlogData,
   villyTestimonialsData,
   villyFaqData,
+  villyGalleryData,
 } from '@/lib/doma-villy-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function VillyPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -112,7 +113,7 @@ export default function VillyPage() {
         <Gallery
           title="Фото и видеогалерея вилл"
           description="Посмотрите реальные объекты в Сочи и выберите свою идеальную виллу. Сэкономьте время и оценивайте документы и планировку онлайн."
-          items={galleryData}
+          items={villyGalleryData}
         />
 
         {/* <Certificates

@@ -32,8 +32,9 @@ import {
   ekonomDomaBlogData,
   ekonomDomaTestimonialsData,
   ekonomDomaFaqData,
+  ekonomDomaGalleryData,
 } from '@/lib/doma-ekonom-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function EkonomDomaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -109,7 +110,7 @@ export default function EkonomDomaPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Фото и видео показывают дом, участок и подъезды без искажений, позволяя оценить состояние и локацию заранее, сокращая время на просмотры."
-          items={galleryData}
+          items={ekonomDomaGalleryData}
         />
 
         {/* <Certificates

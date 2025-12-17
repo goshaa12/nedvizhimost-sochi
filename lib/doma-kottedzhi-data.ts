@@ -265,3 +265,18 @@ export const kottedzhiFaqData = [
   },
 ];
 
+export const kottedzhiGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi-poselki/kottedzhi-poselki-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi-poselki/kottedzhi-poselki-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi-poselki/kottedzhi-poselki-3.webp',
+  },
+];
+

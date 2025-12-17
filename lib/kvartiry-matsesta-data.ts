@@ -258,3 +258,18 @@ export const matsestaFaqData = [
   },
 ];
 
+export const matsestaGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/matsesta/matsesta-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/matsesta/matsesta-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/matsesta/matsesta-3.webp',
+  },
+];
+

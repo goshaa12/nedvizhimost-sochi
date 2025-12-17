@@ -32,8 +32,9 @@ import {
   chastnyeBlogData,
   chastnyeTestimonialsData,
   chastnyeFaqData,
+  chastnyeGalleryData,
 } from '@/lib/doma-chastnye-data';
-import { galleryData, contactInfoData } from '@/lib/page-data';
+import { contactInfoData } from '@/lib/page-data';
 
 export default function ChastnyeDomaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -143,7 +144,7 @@ export default function ChastnyeDomaPage() {
         {/* <Gallery
           title="Фото и видеогалерея"
           description=""
-          items={galleryData}
+          items={chastnyeGalleryData}
         /> */}
 
         <About

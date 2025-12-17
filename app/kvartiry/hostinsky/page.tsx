@@ -34,7 +34,8 @@ import {
   hostinskyTestimonialsData,
   hostinskyFaqData,
 } from '@/lib/kvartiry-hostinsky-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { hostinskyGalleryData } from '@/lib/kvartiry-hostinsky-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryHostinskyPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +115,7 @@ export default function KvartiryHostinskyPage() {
         <Gallery
           title={hostinskyGallery.title}
           description={hostinskyGallery.description}
-          items={galleryData}
+          items={hostinskyGalleryData}
         />
 {/* 
         <Certificates

@@ -263,3 +263,18 @@ export const penthouseFaqData = [
   },
 ];
 
+export const penthouseGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/penthouse/penthouse-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/penthouse/penthouse-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/penthouse/penthouse-3.webp',
+  },
+];
+

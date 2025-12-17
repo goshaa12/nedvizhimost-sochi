@@ -253,15 +253,15 @@ export const investmentStatsData = [
 export const galleryData = [
   {
     type: 'image' as const,
-    url: '/images/doma/villas/villas-1.webp',
+    url: '/images/kvartiry/kvartiry-1.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/doma/villas/villas-2.webp',
+    url: '/images/kvartiry/kvartiry-2.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/doma/villas/villas-3.webp',
+    url: '/images/kvartiry/kvartiry-3.webp',
   },
 ];
 

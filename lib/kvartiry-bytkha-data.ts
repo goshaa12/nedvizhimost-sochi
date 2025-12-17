@@ -286,3 +286,18 @@ export const bytkhaFaqData = [
   },
 ];
 
+export const bytkhaGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/bytkha/bytkha-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/bytkha/bytkha-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/bytkha/bytkha-3.webp',
+  },
+];
+

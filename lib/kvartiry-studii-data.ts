@@ -268,3 +268,18 @@ export const studiiFaqData = [
   },
 ];
 
+export const studiiGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/studii/studii-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/studii/studii-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/studii/studii-3.webp',
+  },
+];
+

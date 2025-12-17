@@ -289,3 +289,18 @@ export const villyFaqData = [
   },
 ];
 
+export const villyGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/villy/villy-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/villy/villy-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/villy/villy-3.webp',
+  },
+];
+

@@ -264,4 +264,19 @@ export const ekonomFaqData = [
   },
 ];
 
+export const ekonomGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/ekonom/ekonom-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/ekonom/ekonom-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/ekonom/ekonom-3.webp',
+  },
+];
+
 

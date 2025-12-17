@@ -33,7 +33,7 @@ import {
   dagomysAboutParagraphs,
   dagomysTestimonialsData,
   dagomysFaqData,
-  galleryData
+  dagomysGalleryData
 } from '@/lib/kvartiry-dagomys-data';
 import { certificatesData, contactInfoData } from '@/lib/page-data';
 
@@ -114,7 +114,7 @@ export default function KvartiryDagomysPage() {
         <Gallery
           title={dagomysGallery.title}
           description={dagomysGallery.description}
-          items={galleryData}
+          items={dagomysGalleryData}
         />
 
         <About

@@ -36,7 +36,8 @@ import {
   dvuhkomTestimonialsData,
   dvuhkomFaqData,
 } from '@/lib/kvartiry-2kom-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { dvuhkomGalleryData } from '@/lib/kvartiry-2kom-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function Kvartiry2KomPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -109,12 +110,6 @@ export default function Kvartiry2KomPage() {
           description={dvuhkomLeadForm.description}
           buttonText={dvuhkomLeadForm.buttonText}
           onButtonClick={openModal}
-        />
-
-        <Gallery
-          title={dvuhkomGallery.title}
-          description={dvuhkomGallery.description}
-          items={galleryData}
         />
 
         <Certificates

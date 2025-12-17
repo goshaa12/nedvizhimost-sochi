@@ -32,8 +32,9 @@ import {
   tagilBlogData,
   tagilTestimonialsData,
   tagilFaqData,
+  tagilGalleryData,
 } from '@/lib/doma-tagil-data';
-import { galleryData, contactInfoData } from '@/lib/page-data';
+import { contactInfoData } from '@/lib/page-data';
 
 export default function TagilPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -111,7 +112,7 @@ export default function TagilPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Оцените лучшие танхаусы и выберите свой идеальный танхаус без лишних просмотров. Получите проверенные объекты и экономьте время."
-          items={galleryData}
+          items={tagilGalleryData}
         />
 
         <About

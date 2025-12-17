@@ -265,4 +265,19 @@ export const biznesFaqData = [
   },
 ];
 
+export const biznesGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/biznes/biznes-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/biznes/biznes-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/biznes/biznes-3.webp',
+  },
+];
+
 

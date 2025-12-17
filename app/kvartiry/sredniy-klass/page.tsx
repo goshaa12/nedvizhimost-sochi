@@ -35,7 +35,7 @@ import {
   sredniyBlogData,
   sredniyTestimonialsData,
   sredniyFaqData,
-  galleryData,
+  sredniyGalleryData,
 } from '@/lib/kvartiry-sredniy-data';
 import { certificatesData, contactInfoData } from '@/lib/page-data';
 
@@ -108,7 +108,7 @@ export default function KvartirySredniyPage() {
         <Gallery
           title={sredniyGallery.title}
           description={sredniyGallery.description}
-          items={galleryData}
+          items={sredniyGalleryData}
         />
 
         <Certificates

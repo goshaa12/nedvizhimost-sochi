@@ -257,3 +257,18 @@ export const adlerFaqData = [
   },
 ];
 
+export const adlerGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/adler/adler-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/adler/adler-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/adler/adler-3.webp',
+  },
+];
+

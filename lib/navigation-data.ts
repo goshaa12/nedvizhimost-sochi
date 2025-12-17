@@ -104,6 +104,17 @@ export const navigationData: NavItem[] = [
           { label: 'Дома в Мацесте', href: '/doma/matsesta' },
           { label: 'Дома в Дагомысе', href: '/doma/dagomys' },
           { label: 'Дома в Бытхе', href: '/doma/bytkha' },
+          { label: 'Дома в Кудепсте', href: '/doma/kudepsta' },
+          { label: 'Дома в Лазаревский', href: '/doma/lazarevskoe' },
+        ],
+      },
+      {
+        label: 'Дополнительно',
+        href: '#',
+        children: [
+          { label: 'Дом от собственника', href: '/doma/ot-sobstvennika' },
+          { label: 'Дома в центре Сочи', href: '/doma/v-tsentre' },
+          { label: 'Дома у моря в Сочи', href: '/doma/u-morya' },
         ],
       },
     ],

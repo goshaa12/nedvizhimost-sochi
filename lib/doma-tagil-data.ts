@@ -288,3 +288,18 @@ export const tagilFaqData = [
   },
 ];
 
+export const tagilGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/taunkhausy/taunkhausy-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/taunkhausy/taunkhausy-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/taunkhausy/taunkhausy-3.webp',
+  },
+];
+

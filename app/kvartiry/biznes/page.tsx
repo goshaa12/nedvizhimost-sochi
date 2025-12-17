@@ -32,7 +32,8 @@ import {
   biznesTestimonialsData,
   biznesFaqData,
 } from '@/lib/kvartiry-biznes-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { biznesGalleryData } from '@/lib/kvartiry-biznes-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryBiznesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -95,7 +96,7 @@ export default function KvartiryBiznesPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Посмотрите реальные фото и видео, чтобы заранее понять качество строительства, виды и окружение."
-          items={galleryData}
+          items={biznesGalleryData}
         />
 
         <Certificates

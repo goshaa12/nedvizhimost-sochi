@@ -32,7 +32,8 @@ import {
   bytkhaTestimonialsData,
   bytkhaFaqData,
 } from '@/lib/kvartiry-bytkha-data';
-import { galleryData, contactInfoData } from '@/lib/page-data';
+import { bytkhaGalleryData } from '@/lib/kvartiry-bytkha-data';
+import { contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryBytkhaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);

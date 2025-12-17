@@ -34,7 +34,8 @@ import {
   adlerTestimonialsData,
   adlerFaqData,
 } from '@/lib/kvartiry-adler-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { adlerGalleryData } from '@/lib/kvartiry-adler-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryAdlerPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +115,7 @@ export default function KvartiryAdlerPage() {
         <Gallery
           title={adlerGallery.title}
           description={adlerGallery.description}
-          items={galleryData}
+          items={adlerGalleryData}
         />
 
         {/* <Certificates

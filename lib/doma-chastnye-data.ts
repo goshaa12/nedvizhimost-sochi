@@ -266,3 +266,18 @@ export const chastnyeFaqData = [
   },
 ];
 
+export const chastnyeGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/chastnye/chastnye-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/chastnye/chastnye-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/chastnye/chastnye-3.webp',
+  },
+];
+

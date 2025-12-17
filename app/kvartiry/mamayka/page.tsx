@@ -32,7 +32,8 @@ import {
   mamaykaTestimonialsData,
   mamaykaFaqData,
 } from '@/lib/kvartiry-mamayka-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { mamaykaGalleryData } from '@/lib/kvartiry-mamayka-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryMamaykaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -112,7 +113,7 @@ export default function KvartiryMamaykaPage() {
         <Gallery
           title={mamaykaGallery.title}
           description={mamaykaGallery.description}
-          items={galleryData}
+          items={mamaykaGalleryData}
         />
 
         <About

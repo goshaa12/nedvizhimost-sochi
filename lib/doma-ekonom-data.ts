@@ -299,3 +299,18 @@ export const ekonomDomaFaqData = [
   },
 ];
 
+export const ekonomDomaGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/ekonom/ekonom-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/ekonom/ekonom-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/ekonom/ekonom-3.webp',
+  },
+];
+

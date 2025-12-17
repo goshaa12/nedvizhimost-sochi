@@ -33,8 +33,9 @@ import {
   kottedzhiSimpleBlogData,
   kottedzhiSimpleTestimonialsData,
   kottedzhiSimpleFaqData,
+  kottedzhiSimpleGalleryData,
 } from '@/lib/doma-kottedzhi-simple-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KottedzhiPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -112,7 +113,7 @@ export default function KottedzhiPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Приобретите коттедж, который точно подойдёт вашей семье и бюджету."
-          items={galleryData}
+          items={kottedzhiSimpleGalleryData}
         />
 
         {/* <Certificates

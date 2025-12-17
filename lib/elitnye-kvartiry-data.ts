@@ -208,6 +208,21 @@ export const elitnyeFaqData = [
   },
 ];
 
+export const elitnyeGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/elitnye/elitnye-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/elitnye/elitnye-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/elitnye/elitnye-3.webp',
+  },
+];
+
 export const elitnyeBlogData = [
   {
     title: 'Элитные квартиры в новостройках: плюсы, риски и правильный выбор',

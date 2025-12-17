@@ -174,18 +174,18 @@ export const dagomysPaymentMethodsData = [
   },
 ];
 
-export const galleryData = [
+export const dagomysGalleryData = [
   {
     type: 'image' as const,
     url: '/images/kvartiry/dagomys/dagomys-1.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/kvartiry/adler/adler-2.webp',
+    url: '/images/kvartiry/dagomys/dagomys-2.webp',
   },
   {
     type: 'image' as const,
-    url: '/images/kvartiry/dagomys/dagomys-2.webp',
+    url: '/images/kvartiry/dagomys/dagomys-3.webp',
   },
 ];
 

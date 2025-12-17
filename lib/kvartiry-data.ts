@@ -315,3 +315,18 @@ export const kvartiryBlogData = [
   },
 ];
 
+export const kvartiryGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/kvartiry-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/kvartiry-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/kvartiry-3.webp',
+  },
+];
+

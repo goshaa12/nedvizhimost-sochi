@@ -272,3 +272,18 @@ export const kottedzhiSimpleFaqData = [
   },
 ];
 
+export const kottedzhiSimpleGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi/kottedzhi-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi/kottedzhi-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/doma/kottedzhi/kottedzhi-3.webp',
+  },
+];
+

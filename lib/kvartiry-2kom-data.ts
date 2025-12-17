@@ -275,3 +275,18 @@ export const dvuhkomFaqData = [
   },
 ];
 
+export const dvuhkomGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/2kom/2kom-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/2kom/2kom-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/2kom/2kom-3.webp',
+  },
+];
+

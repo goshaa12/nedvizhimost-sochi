@@ -102,11 +102,11 @@ export default function KvartiryPenthousePage() {
           cards={penthouseSpecialOffersData.cards}
         />
 
-        <Blog
+        {/* <Blog
           title={penthouseBlogData.title}
           description={penthouseBlogData.description}
           articles={penthouseBlogData.articles}
-        />
+        /> */}
 
         <Testimonials
           title="Отзывы"

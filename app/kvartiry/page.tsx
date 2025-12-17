@@ -33,7 +33,8 @@ import {
   kvartiryBlogData,
   priceTableData,
 } from '@/lib/kvartiry-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { kvartiryGalleryData } from '@/lib/kvartiry-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -133,7 +134,7 @@ export default function KvartiryPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Посмотрите, как выглядят дома, подъезды и виды с разных этажей на самом деле — без ретуши и красивых обещаний. Убедитесь в уровне строительства, оцените район вокруг будущей квартиры."
-          items={galleryData}
+          items={kvartiryGalleryData}
         />
         {/* <Certificates
           title="Сертификаты, дипломы и награды"

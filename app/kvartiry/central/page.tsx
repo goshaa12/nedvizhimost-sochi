@@ -34,7 +34,8 @@ import {
   centralTestimonialsData,
   centralFaqData,
 } from '@/lib/kvartiry-central-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { centralGalleryData } from '@/lib/kvartiry-central-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryCentralPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +115,7 @@ export default function KvartiryCentralPage() {
         <Gallery
           title={centralGallery.title}
           description={centralGallery.description}
-          items={galleryData}
+          items={centralGalleryData}
         />
 
         <Certificates

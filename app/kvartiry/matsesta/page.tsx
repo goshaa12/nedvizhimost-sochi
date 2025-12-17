@@ -34,7 +34,8 @@ import {
   matsestaTestimonialsData,
   matsestaFaqData,
 } from '@/lib/kvartiry-matsesta-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { matsestaGalleryData } from '@/lib/kvartiry-matsesta-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KvartiryMatsestaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -113,7 +114,7 @@ export default function KvartiryMatsestaPage() {
         <Gallery
           title={matsestaGallery.title}
           description={matsestaGallery.description}
-          items={galleryData}
+          items={matsestaGalleryData}
         />
 
         {/* <Certificates

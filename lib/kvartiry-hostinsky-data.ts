@@ -262,3 +262,18 @@ export const hostinskyFaqData = [
   },
 ];
 
+export const hostinskyGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/hostinsky/hostinsky-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/hostinsky/hostinsky-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/hostinsky/hostinsky-3.webp',
+  },
+];
+

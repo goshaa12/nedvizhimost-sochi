@@ -261,3 +261,18 @@ export const mamaykaFaqData = [
   },
 ];
 
+export const mamaykaGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/mamayka/mamayka-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/mamayka/mamayka-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/mamayka/mamayka-3.webp',
+  },
+];
+

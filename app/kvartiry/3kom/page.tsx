@@ -36,7 +36,8 @@ import {
   trehkomTestimonialsData,
   trehkomFaqData,
 } from '@/lib/kvartiry-3kom-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { trehkomGalleryData } from '@/lib/kvartiry-3kom-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function Kvartiry3KomPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +115,7 @@ export default function Kvartiry3KomPage() {
         <Gallery
           title={trehkomGallery.title}
           description={trehkomGallery.description}
-          items={galleryData}
+          items={trehkomGalleryData}
         />
 
         {/* <Certificates

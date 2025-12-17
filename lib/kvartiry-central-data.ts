@@ -261,3 +261,18 @@ export const centralFaqData = [
   },
 ];
 
+export const centralGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/central/central-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/central/central-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/central/central-3.webp',
+  },
+];
+

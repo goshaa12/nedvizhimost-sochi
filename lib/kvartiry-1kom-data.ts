@@ -267,3 +267,18 @@ export const odnokomFaqData = [
   },
 ];
 
+export const odnokomGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/1kom/1kom-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/1kom/1kom-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/1kom/1kom-3.webp',
+  },
+];
+

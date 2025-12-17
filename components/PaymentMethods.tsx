@@ -30,6 +30,11 @@ export function PaymentMethods({
   ctaButtonText,
   onCtaClick,
 }: PaymentMethodsProps) {
+  const methodsCount = methods.length;
+  const gridCols = methodsCount === 3 
+    ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' 
+    : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4';
+  
   return (
     <section className="py-12 md:py-20 bg-gradient-to-b from-white to-emerald-50">
       <div className="container mx-auto px-4">
@@ -37,7 +42,7 @@ export function PaymentMethods({
           <h2 className="mb-4 text-2xl sm:text-3xl font-bold text-gray-900">{title}</h2>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+        <div className={`grid ${gridCols} gap-4 md:gap-6 mb-8 md:mb-12`}>
           {methods.map((method, index) => {
             const Icon = iconMap[method.icon] || Banknote;
             return (

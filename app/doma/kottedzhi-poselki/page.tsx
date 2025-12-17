@@ -31,8 +31,9 @@ import {
   kottedzhiBlogData,
   kottedzhiTestimonialsData,
   kottedzhiFaqData,
+  kottedzhiGalleryData,
 } from '@/lib/doma-kottedzhi-data';
-import { galleryData, certificatesData, contactInfoData } from '@/lib/page-data';
+import { certificatesData, contactInfoData } from '@/lib/page-data';
 
 export default function KottedzhiPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -103,7 +104,7 @@ export default function KottedzhiPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Посмотрите в галерее коттеджные дома, участки и подъездные пути — вы сразу видите состояние объекта и понимаете, стоит ли ехать на просмотр."
-          items={galleryData}
+          items={kottedzhiGalleryData}
         />
 
         {/* <Certificates

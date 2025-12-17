@@ -27,8 +27,9 @@ import {
   elitnyeInfoCardsData,
   elitnyeTestimonialsData,
   elitnyeFaqData,
+  elitnyeGalleryData,
 } from '@/lib/elitnye-kvartiry-data';
-import { galleryData, contactInfoData } from '@/lib/page-data';
+import { contactInfoData } from '@/lib/page-data';
 
 export default function ElitnyeKvartiryPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -123,7 +124,7 @@ export default function ElitnyeKvartiryPage() {
         <Gallery
           title="Фото и видеогалерея"
           description="Сложно представить объект только по описанию? Посмотрите фото- и видеообзоры, чтобы не тратить время на неподходящие варианты."
-          items={galleryData}
+          items={elitnyeGalleryData}
         />
         {/* <Certificates
           title="Сертификаты, дипломы и награды"

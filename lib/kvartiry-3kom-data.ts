@@ -279,3 +279,18 @@ export const trehkomFaqData = [
   },
 ];
 
+export const trehkomGalleryData = [
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/3kom/3kom-1.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/3kom/3kom-2.webp',
+  },
+  {
+    type: 'image' as const,
+    url: '/images/kvartiry/3kom/3kom-3.webp',
+  },
+];
+

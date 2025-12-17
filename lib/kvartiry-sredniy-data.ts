@@ -195,7 +195,7 @@ export const sredniyGallery = {
   description: 'Посмотрите материалы, чтобы проверить понравившуются квартиру ещё до визита и быть спокойнее.',
 };
 
-export const galleryData = [
+export const sredniyGalleryData = [
   {
     type: 'image' as const,
     url: '/images/kvartiry/sredniy-klass/sredniy-klass-1.webp',
