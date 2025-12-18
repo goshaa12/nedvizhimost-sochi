@@ -122,6 +122,50 @@ export const navigationData: NavItem[] = [
   {
     label: 'Новостройки',
     href: '/novostroyki',
+    children: [
+      {
+        label: 'Класс',
+        href: '#',
+        children: [
+          { label: 'Элитные новостройки', href: '/novostroyki/elitnye' },
+          { label: 'Новостройки бизнес-класса', href: '/novostroyki/biznes-klass' },
+          { label: 'Новостройки эконом-класса', href: '/novostroyki/ekonom-klass' },
+        ],
+      },
+      {
+        label: 'Готовность',
+        href: '#',
+        children: [
+          { label: 'Сданные новостройки', href: '/novostroyki/sdannye' },
+          { label: 'Строящиеся новостройки', href: '/novostroyki/stroyashchiesya' },
+        ],
+      },
+      {
+        label: 'Район',
+        href: '#',
+        children: [
+          { label: 'Новостройки в Центральном районе', href: '/novostroyki/centralnyy-rayon' },
+          { label: 'Новостройки в Хосте', href: '/novostroyki/host' },
+          { label: 'Новостройки в Кудепсте', href: '/novostroyki/kudepsta' },
+          { label: 'Новостройки в Мамайке', href: '/novostroyki/mamayka' },
+          { label: 'Новостройки в Бытхе', href: '/novostroyki/bytkha' },
+          { label: 'Новостройки в Адлере', href: '/novostroyki/adler' },
+          { label: 'Новостройки в Красной Поляне', href: '/novostroyki/krasnaya-polyana' },
+          { label: 'Новостройки в Мацесте', href: '/novostroyki/matsesta' },
+          { label: 'Новостройки в Дагомысе', href: '/novostroyki/dagomys' },
+        ],
+      },
+      {
+        label: 'Дополнительно',
+        href: '#',
+        children: [
+          { label: 'Новостройки у моря', href: '/novostroyki/u-morya' },
+          { label: 'Новостройки в ипотеку', href: '/novostroyki/v-ipoteku' },
+          { label: 'Новостройки по ФЗ-214', href: '/novostroyki/fz-214' },
+          { label: 'Новостройки от застройщика', href: '/novostroyki/ot-zastroyshchika' },
+        ],
+      },
+    ],
   },
   {
     label: 'Участки',
