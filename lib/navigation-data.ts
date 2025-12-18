@@ -145,7 +145,7 @@ export const navigationData: NavItem[] = [
         href: '#',
         children: [
           { label: 'Новостройки в Центральном районе', href: '/novostroyki/centralnyy-rayon' },
-          { label: 'Новостройки в Хосте', href: '/novostroyki/host' },
+          { label: 'Новостройки в Хосте', href: '/novostroyki/hostinskiy-rayon' },
           { label: 'Новостройки в Кудепсте', href: '/novostroyki/kudepsta' },
           { label: 'Новостройки в Мамайке', href: '/novostroyki/mamayka' },
           { label: 'Новостройки в Бытхе', href: '/novostroyki/bytkha' },

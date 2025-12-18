@@ -1,6 +1,6 @@
 "use client";
 
-import { Shield, Clock, FileCheck, Percent, type LucideIcon } from 'lucide-react';
+import { Shield, Clock, FileCheck, Percent, Home, DollarSign, MonitorPlay, Headphones, type LucideIcon } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const iconMap: Record<string, LucideIcon> = {
@@ -8,6 +8,10 @@ const iconMap: Record<string, LucideIcon> = {
   Clock,
   FileCheck,
   Percent,
+  Home,
+  DollarSign,
+  MonitorPlay,
+  Headphones,
 };
 
 export interface HeroFeature {
