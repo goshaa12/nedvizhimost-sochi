@@ -160,7 +160,7 @@ export const navigationData: NavItem[] = [
         href: '#',
         children: [
           { label: 'Новостройки у моря', href: '/novostroyki/u-morya' },
-          { label: 'Новостройки в ипотеку', href: '/novostroyki/v-ipoteku' },
+          { label: 'Новостройки в ипотеку', href: '/novostroyki/ipoteka' },
           { label: 'Новостройки по ФЗ-214', href: '/novostroyki/fz-214' },
           { label: 'Новостройки от застройщика', href: '/novostroyki/ot-zastroyshchika' },
         ],
@@ -170,6 +170,63 @@ export const navigationData: NavItem[] = [
   {
     label: 'Участки',
     href: '/uchastki',
+    children: [
+      {
+        label: 'Класс',
+        href: '#',
+        children: [
+          { label: 'Элитные участки', href: '/uchastki/elitnye' },
+          { label: 'Недорогие участки', href: '/uchastki/nedorogie' },
+        ],
+      },
+      {
+        label: 'Площадь',
+        href: '#',
+        children: [
+          { label: 'Участки до 10 соток', href: '/uchastki/do-10-sotok' },
+          { label: 'Участки от 10 до 30 соток', href: '/uchastki/ot-10-do-30-sotok' },
+          { label: 'Участки от 30 до 60 соток', href: '/uchastki/ot-30-do-60-sotok' },
+          { label: 'Участки от 60 соток до 1 га', href: '/uchastki/ot-60-sotok-do-1-ga' },
+          { label: 'Участки свыше 1 га', href: '/uchastki/svyshe-1-ga' },
+        ],
+      },
+      {
+        label: 'Район',
+        href: '#',
+        children: [
+          { label: 'Участки в Адлере', href: '/uchastki/adler' },
+          { label: 'Участки в Дагомысе', href: '/uchastki/dagomys' },
+          { label: 'Участки в Мамайке', href: '/uchastki/mamayka' },
+          { label: 'Участки в Мацесте', href: '/uchastki/matsesta' },
+          { label: 'Участки в Красной Поляне', href: '/uchastki/krasnaya-polyana' },
+          { label: 'Участки в Кудепсте', href: '/uchastki/kudepsta' },
+          { label: 'Участки в Хостинском районе', href: '/uchastki/hostinsky' },
+          { label: 'Участки в Лазаревском', href: '/uchastki/lazarevskoe' },
+          { label: 'Участки в Лоо', href: '/uchastki/loo' },
+          { label: 'Участки в Голицыно', href: '/uchastki/golitsyno' },
+        ],
+      },
+      {
+        label: 'Использование',
+        href: '#',
+        children: [
+          { label: 'Участки под ИЖС', href: '/uchastki/izhs' },
+          { label: 'Участки под садоводство', href: '/uchastki/sadovodstvo' },
+          { label: 'Участки под ЛПХ', href: '/uchastki/lph' },
+          { label: 'Дачные участки', href: '/uchastki/dachnye' },
+        ],
+      },
+      {
+        label: 'Дополнительно',
+        href: '#',
+        children: [
+          { label: 'Участки в горах', href: '/uchastki/v-gorakh' },
+          { label: 'Участки в центре Сочи', href: '/uchastki/v-tsentre' },
+          { label: 'Участки у моря', href: '/uchastki/u-morya' },
+          { label: 'Участки от собственника', href: '/uchastki/ot-sobstvennika' },
+        ],
+      },
+    ],
   },
   {
     label: 'Коммерция',

@@ -269,7 +269,7 @@ export const matsestaGalleryData = [
   },
   {
     type: 'image' as const,
-    url: '/images/kvartiry/matsesta/matsesta-3.webp',
+    url: '/images/doma/matsesta/matsesta-3.webp',
   },
 ];
 
