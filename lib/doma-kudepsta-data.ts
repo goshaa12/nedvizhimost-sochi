@@ -223,7 +223,7 @@ export const kudepstaDomaGalleryData = [
   },
   {
     type: 'image' as const,
-    url: '/images/doma/kudepsta/kudepsta-3.webp',
+    url: '/images/uchastki/kudepsta/kudepsta-1.webp',
   },
 ];
 
