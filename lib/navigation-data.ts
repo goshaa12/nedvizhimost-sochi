@@ -220,7 +220,7 @@ export const navigationData: NavItem[] = [
         label: 'Дополнительно',
         href: '#',
         children: [
-          { label: 'Участки в горах', href: '/uchastki/v-gorakh' },
+          { label: 'Участки в горах', href: '/uchastki/gory' },
           { label: 'Участки в центре Сочи', href: '/uchastki/v-tsentre' },
           { label: 'Участки у моря', href: '/uchastki/u-morya' },
           { label: 'Участки от собственника', href: '/uchastki/ot-sobstvennika' },
