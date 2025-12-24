@@ -231,6 +231,15 @@ export const navigationData: NavItem[] = [
   {
     label: 'Коммерция',
     href: '/kommerciya',
+    children: [
+      { label: 'Торговые площади', href: '/kommerciya/torgovye-ploshchadi' },
+      { label: 'Гостиницы', href: '/kommerciya/gostinitsy' },
+      { label: 'Офисы и офисные помещения', href: '/kommerciya/ofisy' },
+      { label: 'Рестораны', href: '/kommerciya/restorany' },
+      { label: 'Бары', href: '/kommerciya/bary' },
+      { label: 'Кафе', href: '/kommerciya/kafe' },
+      { label: 'Складские помещения', href: '/kommerciya/skladskie-pomeshcheniya' },
+    ],
   },
   {
     label: 'Аренда',
