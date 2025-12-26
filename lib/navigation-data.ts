@@ -68,55 +68,61 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: 'Дома',
-    href: '/doma',
+    label: 'Аренда',
+    href: '/arenda',
     children: [
       {
-        label: 'По классу',
-        href: '#',
+        label: 'Аренда квартир',
+        href: '/arenda/kvartiry',
         children: [
-          { label: 'Элитные дома', href: '/doma/elitnye' },
-          { label: 'Элитные коттеджи', href: '/doma/elitnye-kottedzhi' },
-          { label: 'Дома эконом-класса', href: '/doma/ekonom' },
+          {
+            label: 'Аренда квартир',
+            href: '/arenda/kvartiry',
+          },
+          {
+            label: 'По району',
+            href: '#',
+            children: [
+              { label: 'Квартиры в аренду в Адлере', href: '/arenda/kvartiry/adler' },
+              { label: 'Квартиры в аренду в Красной Поляне', href: '/arenda/kvartiry/krasnaya-polyana' },
+              { label: 'Квартиры в аренду в Дагомысе', href: '/arenda/kvartiry/dagomys' },
+              { label: 'Квартиры в аренду в Центральном', href: '/arenda/kvartiry/centralnyy' },
+              { label: 'Квартиры в аренду в Хостинском', href: '/arenda/kvartiry/hostinskiy' },
+              { label: 'Квартиры в аренду в Мамайке', href: '/arenda/kvartiry/mamayka' },
+              { label: 'Квартиры в аренду в Мацесте', href: '/arenda/kvartiry/matsesta' },
+              { label: 'Квартиры в аренду в Бытхе', href: '/arenda/kvartiry/bytkha' },
+            ],
+          },
+          {
+            label: 'По типу',
+            href: '#',
+            children: [
+              { label: 'Аренда апартаментов', href: '/arenda/kvartiry/apartments' },
+              { label: 'Аренда пентхауса', href: '/arenda/kvartiry/penthouse' },
+            ],
+          },
+          {
+            label: 'По количеству комнат',
+            href: '#',
+            children: [
+              { label: 'Аренда 1-комнатных квартир', href: '/arenda/kvartiry/1kom' },
+              { label: 'Аренда 2-комнатных квартир', href: '/arenda/kvartiry/2kom' },
+              { label: 'Аренда 3-комнатных квартир', href: '/arenda/kvartiry/3kom' },
+              { label: 'Аренда студий', href: '/arenda/kvartiry/studii' },
+            ],
+          },
+          {
+            label: 'Дополнительно',
+            href: '#',
+            children: [
+              { label: 'Аренда квартиры у моря', href: '/arenda/kvartiry/u-morya' },
+            ],
+          },
         ],
       },
-      {
-        label: 'По типу',
-        href: '#',
-        children: [
-          { label: 'Коттеджные посёлки', href: '/doma/kottedzhi-poselki' },
-          { label: 'Коттеджи', href: '/doma/kottedzhi' },
-          { label: 'Таунхаусы', href: '/doma/taunkhausy' },
-          { label: 'Виллы', href: '/doma/villy' },
-          { label: 'Частные дома', href: '/doma/chastnye' },
-          { label: 'Эллинги', href: '/doma/ellingi' },
-        ],
-      },
-      {
-        label: 'По району',
-        href: '#',
-        children: [
-          { label: 'Дома в Центральном районе', href: '/doma/central' },
-          { label: 'Дома в Хостинском районе', href: '/doma/hostinsky' },
-          { label: 'Дома в Мамайке', href: '/doma/mamayka' },
-          { label: 'Дома в Адлере', href: '/doma/adler' },
-          { label: 'Дома в Красной Поляне', href: '/doma/krasnaya-polyana' },
-          { label: 'Дома в Мацесте', href: '/doma/matsesta' },
-          { label: 'Дома в Дагомысе', href: '/doma/dagomys' },
-          { label: 'Дома в Бытхе', href: '/doma/bytkha' },
-          { label: 'Дома в Кудепсте', href: '/doma/kudepsta' },
-          { label: 'Дома в Лазаревский', href: '/doma/lazarevskoe' },
-        ],
-      },
-      {
-        label: 'Дополнительно',
-        href: '#',
-        children: [
-          { label: 'Дом от собственника', href: '/doma/ot-sobstvennika' },
-          { label: 'Дома в центре Сочи', href: '/doma/v-tsentre' },
-          { label: 'Дома у моря в Сочи', href: '/doma/u-morya' },
-        ],
-      },
+      { label: 'Аренда домов', href: '/arenda/doma' },
+      { label: 'Аренда коттеджей', href: '/arenda/kottedzhi' },
+      { label: 'Аренда торговых площадей', href: '/arenda/torgovye-ploshchadi' },
     ],
   },
   {
@@ -242,8 +248,56 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: 'Аренда',
-    href: '/arenda',
+    label: 'Дома',
+    href: '/doma',
+    children: [
+      {
+        label: 'По классу',
+        href: '#',
+        children: [
+          { label: 'Элитные дома', href: '/doma/elitnye' },
+          { label: 'Элитные коттеджи', href: '/doma/elitnye-kottedzhi' },
+          { label: 'Дома эконом-класса', href: '/doma/ekonom' },
+        ],
+      },
+      {
+        label: 'По типу',
+        href: '#',
+        children: [
+          { label: 'Коттеджные посёлки', href: '/doma/kottedzhi-poselki' },
+          { label: 'Коттеджи', href: '/doma/kottedzhi' },
+          { label: 'Таунхаусы', href: '/doma/taunkhausy' },
+          { label: 'Виллы', href: '/doma/villy' },
+          { label: 'Частные дома', href: '/doma/chastnye' },
+          { label: 'Эллинги', href: '/doma/ellingi' },
+        ],
+      },
+      {
+        label: 'По району',
+        href: '#',
+        children: [
+          { label: 'Дома в Центральном районе', href: '/doma/central' },
+          { label: 'Дома в Хостинском районе', href: '/doma/hostinsky' },
+          { label: 'Дома в Мамайке', href: '/doma/mamayka' },
+          { label: 'Дома в Адлере', href: '/doma/adler' },
+          { label: 'Дома в Красной Поляне', href: '/doma/krasnaya-polyana' },
+          { label: 'Дома в Мацесте', href: '/doma/matsesta' },
+          { label: 'Дома в Дагомысе', href: '/doma/dagomys' },
+          { label: 'Дома в Бытхе', href: '/doma/bytkha' },
+          { label: 'Дома в Кудепсте', href: '/doma/kudepsta' },
+          { label: 'Дома в Лазаревский', href: '/doma/lazarevskoe' },
+        ],
+      },
+      {
+        label: 'Дополнительно',
+        href: '#',
+        children: [
+          { label: 'Дом от собственника', href: '/doma/ot-sobstvennika' },
+          { label: 'Дома в центре Сочи', href: '/doma/v-tsentre' },
+          { label: 'Дома у моря в Сочи', href: '/doma/u-morya' },
+        ],
+      },
+    ],
   },
   {
     label: 'О компании',

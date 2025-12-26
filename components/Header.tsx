@@ -52,7 +52,7 @@ function DropdownMenuItem({ item, parentOpen, onClose }: { item: NavItem; parent
     return (
       <Link
         href={item.href}
-        className="block px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-900 transition-colors"
+        className="block px-3 py-1.5 text-gray-700 hover:bg-emerald-50 hover:text-emerald-900 transition-colors"
         onClick={onClose}
       >
         {item.label}
@@ -70,13 +70,13 @@ function DropdownMenuItem({ item, parentOpen, onClose }: { item: NavItem; parent
           e.stopPropagation();
           setIsOpen(!isOpen);
         }}
-        className="w-full flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-900 transition-colors text-left"
+        className="w-full flex items-center justify-between px-3 py-1.5 text-gray-700 hover:bg-emerald-50 hover:text-emerald-900 transition-colors text-left"
       >
         <span>{item.label}</span>
         <ChevronDown className={`w-3 h-3 rotate-[-90deg] transition-transform ${isOpen ? 'rotate-90' : ''}`} />
       </button>
       {isOpen && parentOpen && (
-        <div className="absolute left-full top-0 ml-1 bg-white rounded-lg shadow-lg border border-gray-200 py-2 min-w-[220px] z-50">
+        <div className="absolute left-full top-0 ml-0.5 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[220px] z-50">
           {item.children!.map((child, index) => (
             <DropdownMenuItem
               key={index}
@@ -128,16 +128,16 @@ function DropdownMenu({ item, level = 0, onClose }: DropdownMenuProps) {
       ref={menuRef}
       className="relative"
     >
-      <div className="flex items-center gap-0.5 sm:gap-1">
+      <div className="flex items-center gap-0.5">
         <Link
           href={item.href}
-          className="text-gray-600 hover:text-emerald-900 transition-colors whitespace-nowrap text-sm lg:text-base"
+          className="text-gray-600 hover:text-emerald-900 transition-colors whitespace-nowrap text-sm lg:text-base cursor-pointer"
           onClick={onClose}
         >
           {item.label}
         </Link>
         <button
-          className="p-0.5 sm:p-1 text-gray-600 hover:text-emerald-900 transition-colors flex-shrink-0"
+          className="p-0.5 text-gray-600 hover:text-emerald-900 transition-colors flex-shrink-0"
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
@@ -146,12 +146,12 @@ function DropdownMenu({ item, level = 0, onClose }: DropdownMenuProps) {
           aria-label="Открыть меню"
         >
           <ChevronDown
-            className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-3 h-3 sm:w-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           />
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-200 py-2 min-w-[200px] sm:min-w-[220px] z-50">
+        <div className="absolute top-full left-0 mt-0.5 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[200px] sm:min-w-[220px] z-50">
           {item.children.map((child, index) => (
             <DropdownMenuItem
               key={index}
@@ -187,15 +187,27 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
       <div key={item.label} className="border-b border-gray-100">
         {hasChildren ? (
           <>
-            <button
-              onClick={() => toggleItem(item.label)}
-              className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              <span>{item.label}</span>
-              <ChevronDown
-                className={`w-4 h-4 transition-transform ${isItemOpen ? 'rotate-180' : ''}`}
-              />
-            </button>
+            <div className="flex items-center">
+              <Link
+                href={item.href}
+                className="flex-1 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
+                onClick={onClose}
+              >
+                {item.label}
+              </Link>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleItem(item.label);
+                }}
+                className="px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                aria-label="Открыть меню"
+              >
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform ${isItemOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+            </div>
             {isItemOpen && (
               <div className="bg-gray-50 pl-4">
                 {item.children!.map((child) => (
@@ -262,22 +274,22 @@ export function Header({
   return (
     <>
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 [@media(orientation:landscape)_and_(max-height:500px)]:py-1">
-      <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-3 md:py-4 [@media(orientation:landscape)_and_(max-height:500px)]:py-1.5">
-        <div className="flex items-center justify-between gap-2 sm:gap-4 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1.5">
-            <Link href="/" className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-900 rounded-lg flex items-center justify-center [@media(orientation:landscape)_and_(max-height:500px)]:w-7 [@media(orientation:landscape)_and_(max-height:500px)]:h-7">
-                <span className="text-white text-sm sm:text-base [@media(orientation:landscape)_and_(max-height:500px)]:text-xs">{logo.icon || 'S'}</span>
+      <div className="container mx-auto px-2 sm:px-4 py-1.5 sm:py-2 md:py-2.5 [@media(orientation:landscape)_and_(max-height:500px)]:py-1.5">
+        <div className="flex items-center justify-between gap-1.5 sm:gap-2 md:gap-3 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1.5">
+            <Link href="/" className="flex items-center gap-1 sm:gap-1.5 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
+              <div className="w-7 h-7 sm:w-9 sm:h-9 bg-emerald-900 rounded-lg flex items-center justify-center [@media(orientation:landscape)_and_(max-height:500px)]:w-7 [@media(orientation:landscape)_and_(max-height:500px)]:h-7">
+                <span className="text-white text-xs sm:text-sm [@media(orientation:landscape)_and_(max-height:500px)]:text-xs">{logo.icon || 'S'}</span>
             </div>
-              <span className="text-emerald-900 font-semibold text-sm sm:text-base md:text-lg whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-none [@media(orientation:landscape)_and_(max-height:500px)]:text-xs [@media(orientation:landscape)_and_(max-height:500px)]:max-w-[100px]">{logo.text}</span>
+              <span className="text-emerald-900 font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-none [@media(orientation:landscape)_and_(max-height:500px)]:text-xs [@media(orientation:landscape)_and_(max-height:500px)]:max-w-[100px]">{logo.text}</span>
             </Link>
           
-            <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-wrap [@media(orientation:landscape)_and_(max-height:500px)]:gap-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-sm">
+            <nav className="hidden lg:flex items-center gap-2 xl:gap-3 flex-wrap [@media(orientation:landscape)_and_(max-height:500px)]:gap-1.5 [@media(orientation:landscape)_and_(max-height:500px)]:text-sm">
               {navigationData.map((item, index) => (
                 <DropdownMenu key={index} item={item} />
               ))}
           </nav>
           
-          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
+          <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2 flex-shrink-0 [@media(orientation:landscape)_and_(max-height:500px)]:gap-1">
               {phone && (
                 <a
                   href={phone.href}
@@ -289,7 +301,7 @@ export function Header({
               )}
               <button
                 onClick={ctaButton.onClick}
-                className="bg-emerald-900 text-white px-2.5 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg hover:bg-emerald-800 transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap [@media(orientation:landscape)_and_(max-height:500px)]:px-2 [@media(orientation:landscape)_and_(max-height:500px)]:py-1 [@media(orientation:landscape)_and_(max-height:500px)]:text-xs"
+                className="bg-emerald-900 text-white px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-lg hover:bg-emerald-800 transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap [@media(orientation:landscape)_and_(max-height:500px)]:px-2 [@media(orientation:landscape)_and_(max-height:500px)]:py-1 [@media(orientation:landscape)_and_(max-height:500px)]:text-xs"
               >
                 {ctaButton.text}
               </button>
