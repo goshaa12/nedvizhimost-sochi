@@ -302,6 +302,23 @@ export const navigationData: NavItem[] = [
   {
     label: 'О компании',
     href: '/o-kompanii',
+    children: [
+      { label: 'Инвестиции', href: '/o-kompanii/investitsii' },
+      { label: 'Команда', href: '/o-kompanii/komanda' },
+      { label: 'Вакансии', href: '/o-kompanii/vakansii' },
+      { label: 'Ипотека', href: '/o-kompanii/ipoteka' },
+      { label: 'Сертификаты', href: '/o-kompanii/sertifikaty' },
+      { label: 'Консалтинг/Подбор недвижимости', href: '/o-kompanii/podbor-nedvizhimosti' },
+      { label: 'Партнеры', href: '/o-kompanii/partnery' },
+      { label: 'Собственникам', href: '/o-kompanii/sobstvennikam' },
+      { label: 'Оплата', href: '/o-kompanii/oplata' },
+      { label: 'Политика конфиденциальности', href: '/o-kompanii/politika-konfidentsialnosti' },
+      { label: 'Акции', href: '/o-kompanii/aktsii' },
+      { label: 'Блог', href: '/o-kompanii/blog' },
+      { label: 'Отзывы', href: '/o-kompanii/otzyvy' },
+      { label: 'FAQ', href: '/o-kompanii/faq' },
+      { label: 'Контакты', href: '/o-kompanii/kontakty' },
+    ],
   },
 ];
 
