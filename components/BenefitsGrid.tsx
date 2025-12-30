@@ -1,6 +1,6 @@
 "use client";
 
-import { Database, Award, Headphones, Plane, Video, TrendingDown, ShieldCheck, Car, MonitorPlay, PiggyBank, type LucideIcon } from 'lucide-react';
+import { Database, Award, Headphones, Plane, Video, TrendingDown, ShieldCheck, Car, MonitorPlay, PiggyBank, AlertTriangle, Shield, Clock, DollarSign, type LucideIcon } from 'lucide-react';
 
 const iconMap: Record<string, LucideIcon> = {
   Database,
@@ -13,6 +13,10 @@ const iconMap: Record<string, LucideIcon> = {
   Car,
   MonitorPlay,
   PiggyBank,
+  AlertTriangle,
+  Shield,
+  Clock,
+  DollarSign,
 };
 
 export interface Benefit {

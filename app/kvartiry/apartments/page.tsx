@@ -71,6 +71,37 @@ export default function KvartiryApartmentsPage() {
           othersLabel="Другие агентства"
         />
 
+        <section className="py-12 md:py-20 bg-gradient-to-b from-white to-emerald-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <a
+                  href="/kvartiry/apartments/adler"
+                  className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-emerald-900/30 hover:shadow-lg transition-all text-center group"
+                >
+                  <h3 className="mb-2 md:mb-3 text-lg md:text-xl font-semibold text-gray-900 group-hover:text-emerald-900 transition-colors">
+                    Апартаменты в Адлере
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Посмотреть апартаменты в Адлере
+                  </p>
+                </a>
+                <a
+                  href="/kvartiry/apartments/krasnaya-polyana"
+                  className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-emerald-900/30 hover:shadow-lg transition-all text-center group"
+                >
+                  <h3 className="mb-2 md:mb-3 text-lg md:text-xl font-semibold text-gray-900 group-hover:text-emerald-900 transition-colors">
+                    Апартаменты в Красной Поляне
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Посмотреть апартаменты в Красной Поляне
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* <HotDeals
           title="Посмотрите каталог апартаментов"
           description="Настройте фильтр и найдите апартаменты в Сочи за пару кликов: по цене, площади, этажу и формату. Только действительные варианты."
