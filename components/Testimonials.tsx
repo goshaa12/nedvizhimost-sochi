@@ -1,4 +1,5 @@
 import { Quote } from 'lucide-react';
+import React from 'react';
 
 export interface Testimonial {
   name: string;
@@ -11,7 +12,36 @@ export interface TestimonialsProps {
   testimonials: Testimonial[];
 }
 
+function buildJsonLd(testimonials: Testimonial[], title: string) {
+  // Using Review/Person schema per https://schema.org/Review
+  // Aggregate reviews as an array
+  const reviews = testimonials.map((testimonial) => ({
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": testimonial.name,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": testimonial.city
+      }
+    },
+    "reviewBody": testimonial.text
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product", // Product since it's about real estate selection, frequently used for testimonials/reviews
+    "name": title,
+    "review": reviews
+  };
+}
+
 export function Testimonials({ title = 'Отзывы', testimonials }: TestimonialsProps) {
+  const jsonLd = React.useMemo(
+    () => buildJsonLd(testimonials, title),
+    [testimonials, title]
+  );
+
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -40,6 +70,12 @@ export function Testimonials({ title = 'Отзывы', testimonials }: Testimoni
             </div>
           ))}
         </div>
+        {/* JSON-LD for SEO */}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </div>
     </section>
   );
